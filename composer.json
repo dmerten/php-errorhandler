@@ -1,0 +1,17 @@
+{
+  "name": "PHP fancy errorhandler",
+  "require": {
+    "php": ">=5.4"
+  },
+  "authors": [
+    {
+      "name": "Dirk Merten",
+      "email": "mail@dirk-merten.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "dmerten\\ErrorHandler\\": "src/"
+    }
+  }
+}
