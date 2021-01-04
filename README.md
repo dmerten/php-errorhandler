@@ -1,7 +1,7 @@
-#PHP Errorhandler
+# PHP Errorhandler
 Fancy customizable error handling for php errors.
 
-##Usage
+## Usage
 ```php
 include "vendor/autoload.php";
 
