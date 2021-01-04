@@ -5,7 +5,11 @@
  */
 include "vendor/autoload.php";
 
-$publishers[] = new \dmerten\ErrorHandler\Publisher\ErrorLog($_SERVER, $_POST);
+$publishers = [
+    new \dmerten\ErrorHandler\Publisher\ErrorLog($_SERVER, $_POST),
+    new \dmerten\ErrorHandler\Publisher\StdOut($_SERVER)
+];
+
 $handler = new \dmerten\ErrorHandler\ErrorHandler($publishers);
 set_error_handler([$handler, 'handleError']);
 

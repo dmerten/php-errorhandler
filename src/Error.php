@@ -53,7 +53,7 @@ class Error
 	/**
 	 * @return string
 	 */
-	private function getErrorCodeString()
+	public function getErrorCodeString()
 	{
 		switch ($this->errorCode) {
 			case E_ERROR:
