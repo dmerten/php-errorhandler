@@ -1,0 +1,12 @@
+version: "3"
+services:
+  composer:
+    image: composer
+    volumes:
+      - ./:/app
+    command: composer update
+  composer-install:
+    image: composer
+    volumes:
+      - ./:/app
+    command: composer install

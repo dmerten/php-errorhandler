@@ -1,17 +1,20 @@
 {
-  "name": "PHP fancy errorhandler",
-  "require": {
-    "php": ">=7.0"
-  },
-  "authors": [
-    {
-      "name": "Dirk Merten",
-      "email": "mail@dirk-merten.com"
+    "name": "dmerten/php_fancy_errorhandler",
+    "description": "Fancy customizable error handling for php errors",
+    "require-dev": {
+        "phpunit/phpunit": "9.3.*"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dirk Merten",
+            "email": "mail@dirk-merten.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "dmerten\\ErrorHandler\\": "src/"
+        }
     }
-  ],
-  "autoload": {
-    "psr-4": {
-      "dmerten\\ErrorHandler\\": "src/"
-    }
-  }
 }
