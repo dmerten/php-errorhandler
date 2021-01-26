@@ -8,6 +8,10 @@ use dmerten\ErrorHandler\Error;
 
 class StdOut implements Publisher
 {
+    /**
+     * $_SERVER
+     * @var array
+     */
     private $server = [];
 
     /**
@@ -20,6 +24,11 @@ class StdOut implements Publisher
     }
 
 
+    /**
+     * Preformatted for logststash / kibana usage (filters etc)
+     * @param Error $error
+     * @return void
+     */
     public function publishError(Error $error)
     {
         fwrite(
